@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="dist/css/style.min.css" />
+    <script src="./js/main.js" type="module"></script>
+    <title>SearchWiki</title>
+  </head>
+  <body>
+    <main>
+      <h1 class="offscreen">SearchWiki - A Wikipedia Powered Search Engine</h1>
+      <section class="searchEntry">
+        <h2 class="offscreen">Search Term Entry</h2>
+        <div class="logo" aria-hidden="true">
+          <span class="blue">S</span>
+          <span class="red">E</span>
+          <span class="yellow">A</span>
+          <span class="green">R</span>
+          <span class="blue">C</span>
+          <span class="red">H</span>
+          <span class="yellow">W</span>
+          <span class="green">I</span>
+          <span class="blue">K</span>
+          <span class="red">I</span>
+          <span class="yellow exclaim">!</span>
+        </div>
+
+        <form id="searchBar" class="searchBar" role="search">
+          <label class="offscreen" form="search"
+            >Enter a search term or phrase</label
+          >
+          <input id="search" type="text" autocomplete="off " role="searchbox" />
+          <div
+            id="clear"
+            class="none button clear"
+            role="button"
+            tabindex="0"
+            aria-label="clear search terms">
+            <i class="fas fa-times"> </i>
+          </div>
+
+          <button
+            id="searchButton"
+            class="button searchButton"
+            type="submit"
+            aria-label="submit button">
+            <i class="fas fa-search blue"></i>
+          </button>
+        </form>
+      </section>
+      <section class="results">
+        <h2 class="offscreen">Search Results</h2>
+        <div class="statsBar">
+          <div id="stats" class="stats" aria-live="assertive"></div>
+          <div id="searchResults" class="searchResults">
+            <div class="resultsItem">
+              <div class="resultTitle">
+                <a href=""></a>
+              </div>
+              <div class="resultContents">
+                <div class="resultImage">
+                  <img src="" alt="" />
+                </div>
+                <div class="resultText">
+                  <p class="resultDescription"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>
+        <span aria-hidden="true">&lt,&lt;</span> Powered by
+        <a href="https://www.Wikipedia.org" target="_blank">Wikipedia</a>
+        <span aria-hidden="true">&gt;&gt;</span>
+      </p>
+    </footer>
+  </body>
+</html>
